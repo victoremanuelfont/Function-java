@@ -1,6 +1,6 @@
 package entities;
 
-public class Product{
+public class Product {
 
 	private String name;
 	private Double price;
@@ -28,12 +28,15 @@ public class Product{
 	public void setPrice(Double price) {
 		this.price = price;
 	}
-	
+
+	public static String staticUpperCaseName(Product p) {
+
+		return p.getName().toUpperCase();
+	}
 
 	@Override
 	public String toString() {
 		return "Product [name=" + name + ", price=" + price + "]";
 	}
-
 
 }
